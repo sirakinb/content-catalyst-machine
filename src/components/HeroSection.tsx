@@ -75,7 +75,7 @@ export const HeroSection = () => {
             </div>
             <Button 
               type="submit" 
-              className="w-full bg-brand-purple hover:bg-brand-pink transition-colors text-lg py-6 rounded-xl"
+              className="w-full bg-transparent border-2 border-white hover:bg-white/10 transition-colors text-lg py-6 rounded-xl text-white"
             >
               Give Me Content ✨
             </Button>
