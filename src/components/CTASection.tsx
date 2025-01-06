@@ -1,14 +1,14 @@
-import Cal, { getCalApi } from "@calcom/embed-react";
+import { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
+import { Button } from "./ui/button";
 
 export const CTASection = () => {
   useEffect(() => {
     (async function () {
       const cal = await getCalApi({ namespace: "30min" });
       cal("ui", {
-        hideEventTypeDetails: true,
-        layout: "month_view",
-        theme: "light"
+        hideEventTypeDetails: false,
+        layout: "month_view"
       });
     })();
   }, []);
@@ -24,15 +24,15 @@ export const CTASection = () => {
           </h2>
           
           <div className="w-full max-w-3xl mx-auto">
-            <Cal 
-              namespace="30min"
-              calLink="akinyemi-bajulaiye-2jua88/30min"
-              style={{width:"100%", height:"700px", overflow:"scroll"}}
-              config={{
-                layout: "month_view",
-                theme: "light"
-              }}
-            />
+            <Button
+              size="lg"
+              data-cal-link="akinyemi-bajulaiye-2jua88/30min"
+              data-cal-namespace="30min"
+              data-cal-config='{"layout":"month_view"}'
+              className="text-lg px-8 py-6 bg-brand-purple hover:bg-brand-purple/90"
+            >
+              Schedule a Demo Call
+            </Button>
           </div>
         </div>
       </div>
