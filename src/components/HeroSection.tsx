@@ -55,7 +55,7 @@ export const HeroSection = () => {
                 />
               </div>
               <div>
-                <label className="block text-white mb-2">Speaker Name</label>
+                <label className="block text-white mb-2">Speaker Name in the Transcript</label>
                 <Input
                   placeholder="John Doe"
                   value={speakerName}
