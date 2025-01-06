@@ -11,18 +11,18 @@ const plans = [
       "Basic brand voice alignment",
       "Email support",
     ],
-    cta: "Get Starter",
+    cta: "Get Started",
   },
   {
     name: "Momentum",
-    price: "$499",
+    price: "$879",
     description: "Set Up Fee",
     features: [
       "Everything in Starter",
       "Up to 8 curated content pieces per month",
       "Detailed content strategy reviews",
     ],
-    cta: "Go Momentum",
+    cta: "Build Momentum",
     popular: true,
   },
   {
@@ -49,12 +49,15 @@ export const PricingSection = () => {
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`p-8 rounded-lg ${
-                plan.popular
-                  ? "bg-gradient-to-b from-brand-purple to-brand-pink"
-                  : "bg-dark-200"
-              } animate-fade-in`}
+              className={`relative p-8 rounded-lg bg-dark-200 animate-fade-in ${
+                plan.popular ? "ring-2 ring-brand-purple ring-opacity-50 shadow-[0_0_15px_rgba(139,92,246,0.3)]" : ""
+              }`}
             >
+              {plan.popular && (
+                <span className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-brand-purple text-xs px-3 py-1 rounded-full text-white">
+                  Most Popular
+                </span>
+              )}
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
                 <div className="text-4xl font-bold mb-2">{plan.price}</div>
@@ -69,11 +72,7 @@ export const PricingSection = () => {
                 ))}
               </ul>
               <Button
-                className={`w-full ${
-                  plan.popular
-                    ? "bg-white text-brand-purple hover:bg-gray-100"
-                    : "bg-brand-purple hover:bg-brand-pink"
-                }`}
+                className="w-full bg-brand-purple hover:bg-brand-pink"
               >
                 {plan.cta}
               </Button>
