@@ -81,7 +81,7 @@ export const PricingSection = () => {
         </div>
 
         {/* Maintenance Subscription Section */}
-        <div className="mt-16 p-8 rounded-lg bg-dark-200 max-w-4xl mx-auto animate-fade-in">
+        <div className="mt-16 p-8 rounded-lg max-w-4xl mx-auto animate-fade-in">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-bold mb-2">Maintenance Subscription</h3>
