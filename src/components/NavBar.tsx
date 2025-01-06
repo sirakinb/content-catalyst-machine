@@ -3,10 +3,10 @@ import { Button } from "./ui/button";
 
 const NavBar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4 bg-[#130B1D]">
+    <nav className="absolute top-0 left-0 right-0 z-50 px-6 py-4 bg-[#130B1D]">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <img src="/lovable-uploads/bef7eeba-031a-4ca5-87e1-7e0bd3fa6c77.png" alt="Pentridge Media" className="h-12" />
+          <img src="/lovable-uploads/bef7eeba-031a-4ca5-87e1-7e0bd3fa6c77.png" alt="Pentridge Media" className="h-16" />
         </div>
         
         <div className="hidden md:flex items-center gap-12">
@@ -18,7 +18,7 @@ const NavBar = () => {
         
         <Button 
           variant="outline" 
-          className="bg-transparent text-white border border-transparent relative after:absolute after:inset-0 after:p-[1px] after:rounded-md after:bg-gradient-to-r after:from-purple-500/50 after:via-fuchsia-500/50 after:to-pink-500/50 after:-z-10 hover:bg-white/10"
+          className="bg-transparent text-white border-2 border-white hover:bg-white/10 transition-colors"
         >
           Book a Demo
         </Button>
