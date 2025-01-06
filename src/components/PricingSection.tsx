@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import { FeatureComparison } from "./FeatureComparison";
 
 const plans = [
   {
@@ -115,6 +116,8 @@ export const PricingSection = () => {
         <div className="mt-8 text-center text-gray-400">
           All plans come with our 30-day money-back guarantee. <a href="#" className="text-white underline">Try Content-Catalyst risk-free!</a>
         </div>
+
+        <FeatureComparison />
       </div>
     </section>
   );
