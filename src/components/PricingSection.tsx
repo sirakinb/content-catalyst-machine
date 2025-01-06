@@ -80,32 +80,40 @@ export const PricingSection = () => {
           ))}
         </div>
 
-        {/* Monthly Subscription Section */}
-        <div className="mt-16 p-8 rounded-lg bg-dark-200 max-w-2xl mx-auto animate-fade-in">
-          <h3 className="text-2xl font-bold text-center mb-2">Monthly Subscription</h3>
-          <p className="text-gray-400 text-center mb-6">
-            Comprehensive coverage for your automations and AI token usage
-          </p>
-          <div className="text-4xl font-bold text-center mb-6">$60/month</div>
-          <div className="mb-8">
-            <h4 className="text-lg font-semibold mb-4">What's Included:</h4>
-            <ul className="space-y-3">
-              {[
-                "Automation expenses",
-                "Dedicated support",
-                "AI token usage fees",
-                "Access to new feature updates"
-              ].map((feature) => (
-                <li key={feature} className="flex items-center">
-                  <Check className="w-5 h-5 mr-2 text-brand-purple" />
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
+        {/* Maintenance Subscription Section */}
+        <div className="mt-16 p-8 rounded-lg bg-dark-200 max-w-4xl mx-auto animate-fade-in">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 className="text-2xl font-bold mb-2">Maintenance Plan</h3>
+              <p className="text-gray-400 mb-4">
+                Coverage of your automations and AI tokens
+              </p>
+              <div className="text-4xl font-bold mb-4 inline-block bg-dark-100 px-4 py-2 rounded-lg">
+                $60/month
+              </div>
+            </div>
+            
+            <div>
+              <h4 className="text-lg font-semibold mb-4">What's included:</h4>
+              <ul className="space-y-3">
+                {[
+                  "Automation costs",
+                  "AI token costs",
+                  "Support",
+                  "New feature releases"
+                ].map((feature) => (
+                  <li key={feature} className="flex items-center">
+                    <Check className="w-5 h-5 mr-2 text-brand-purple" />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <Button className="w-full bg-brand-purple hover:bg-brand-pink">
-            Subscribe Now
-          </Button>
+          
+          <div className="mt-8 text-center text-gray-400">
+            All plans come with our 30-day money-back guarantee. <a href="#" className="text-white underline">Try Call-to-Content risk-free!</a>
+          </div>
         </div>
       </div>
     </section>
