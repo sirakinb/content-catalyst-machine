@@ -89,7 +89,7 @@ export const PricingSection = () => {
               <p className="text-gray-400 mb-4">
                 Coverage of your automations and AI tokens
               </p>
-              <div className="text-4xl font-bold mb-4 inline-block bg-dark-100 px-4 py-2 rounded-lg">
+              <div className="text-4xl font-bold">
                 $60/month
               </div>
             </div>
