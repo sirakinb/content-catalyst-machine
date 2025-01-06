@@ -20,8 +20,8 @@ export const HeroSection = () => {
         <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white bg-gradient-to-r from-brand-purple to-brand-pink bg-clip-text">
           Effortlessly Fill Your Content Calendar—No Extra Time Required
         </h1>
-        <p className="text-xl md:text-2xl mb-12 text-amber-300">
-          We help you create consistent, quality content from your calls so you can focus on building your business.
+        <p className="text-xl md:text-2xl mb-12 text-gray-400">
+          Create consistent, quality content from your calls
         </p>
         <Button 
           size="lg" 
