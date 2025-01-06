@@ -6,7 +6,7 @@ const NavBar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4 bg-transparent">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <img src="/logo.png" alt="Pentridge Media" className="h-8" />
+          <img src="/lovable-uploads/bef7eeba-031a-4ca5-87e1-7e0bd3fa6c77.png" alt="Pentridge Media" className="h-8" />
         </div>
         
         <div className="hidden md:flex items-center gap-12">
