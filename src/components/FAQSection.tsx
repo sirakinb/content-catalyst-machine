@@ -26,8 +26,9 @@ const faqs = [
 
 export const FAQSection = () => {
   return (
-    <section className="py-20 px-4">
-      <div className="max-w-3xl mx-auto">
+    <section className="relative py-20 px-4">
+      <div className="absolute inset-0 bg-gradient-to-b from-[#130B1D] to-brand-gradient-start pointer-events-none" />
+      <div className="relative max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
           Frequently Asked Questions
         </h2>

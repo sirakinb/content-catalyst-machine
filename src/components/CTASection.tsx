@@ -15,7 +15,7 @@ export const CTASection = () => {
 
   return (
     <section className="relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-dark-100 to-black" />
+      <div className="absolute inset-0 bg-gradient-to-b from-brand-gradient-start to-brand-gradient-end pointer-events-none" />
       
       <div className="relative py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
