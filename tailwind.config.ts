@@ -60,8 +60,8 @@ export default {
           purple: '#8B5CF6',
           pink: '#D946EF',
           'deep-purple': '#1A1F2C',
-          'gradient-start': '#1A1F2C',
-          'gradient-end': '#2D1B4E',
+          'gradient-start': '#1E1533',
+          'gradient-end': '#0C0817',
         }
       },
       borderRadius: {
