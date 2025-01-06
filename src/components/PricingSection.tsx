@@ -73,7 +73,7 @@ export const PricingSection = () => {
                 ))}
               </ul>
               <Button
-                className="w-full bg-brand-purple hover:bg-brand-pink"
+                className="w-full bg-brand-purple transition-transform duration-300 hover:scale-105"
               >
                 {plan.cta}
               </Button>
