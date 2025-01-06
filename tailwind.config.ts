@@ -60,7 +60,7 @@ export default {
           purple: '#8B5CF6',
           pink: '#D946EF',
           'deep-purple': '#1A1F2C',
-          'gradient-start': '#1E1533',
+          'gradient-start': '#130B1D',
           'gradient-end': '#0C0817',
         }
       },
