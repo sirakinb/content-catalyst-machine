@@ -79,6 +79,34 @@ export const PricingSection = () => {
             </div>
           ))}
         </div>
+
+        {/* Monthly Subscription Section */}
+        <div className="mt-16 p-8 rounded-lg bg-dark-200 max-w-2xl mx-auto animate-fade-in">
+          <h3 className="text-2xl font-bold text-center mb-2">Monthly Subscription</h3>
+          <p className="text-gray-400 text-center mb-6">
+            Comprehensive coverage for your automations and AI token usage
+          </p>
+          <div className="text-4xl font-bold text-center mb-6">$60/month</div>
+          <div className="mb-8">
+            <h4 className="text-lg font-semibold mb-4">What's Included:</h4>
+            <ul className="space-y-3">
+              {[
+                "Automation expenses",
+                "Dedicated support",
+                "AI token usage fees",
+                "Access to new feature updates"
+              ].map((feature) => (
+                <li key={feature} className="flex items-center">
+                  <Check className="w-5 h-5 mr-2 text-brand-purple" />
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <Button className="w-full bg-brand-purple hover:bg-brand-pink">
+            Subscribe Now
+          </Button>
+        </div>
       </div>
     </section>
   );
