@@ -1,10 +1,17 @@
 import { useEffect } from "react";
 
+// Extend Window interface to include Cal
+declare global {
+  interface Window {
+    Cal?: any;
+  }
+}
+
 export const CTASection = () => {
   useEffect(() => {
     // Initialize Cal.com embed
-    (function (C, A, L) {
-      let p = function (a, ar) {
+    (function (C: any, A: string, L: string) {
+      let p = function (a: any, ar: any) {
         a.q.push(ar);
       };
       let d = C.document;
@@ -37,18 +44,19 @@ export const CTASection = () => {
     })(window, "https://app.cal.com/embed/embed.js", "init");
 
     // Initialize the calendar
-    (window as any).Cal("init", "30min", { origin: "https://cal.com" });
+    window.Cal?.("init", "30min", { origin: "https://cal.com" });
 
     // Configure the inline embed
-    (window as any).Cal.ns["30min"]("inline", {
+    window.Cal?.ns["30min"]("inline", {
       elementOrSelector: "#my-cal-inline",
-      config: { layout: "month_view" },
+      config: { layout: "month_view", theme: "light" },
       calLink: "akinyemi-bajulaiye-2jua88/30min",
     });
 
     // Configure UI settings
-    (window as any).Cal.ns["30min"]("ui", {
-      hideEventTypeDetails: false,
+    window.Cal?.ns["30min"]("ui", {
+      theme: "light",
+      hideEventTypeDetails: true,
       layout: "month_view",
     });
   }, []);
