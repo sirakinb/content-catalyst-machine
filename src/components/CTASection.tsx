@@ -6,12 +6,15 @@ export const CTASection = () => {
   useEffect(() => {
     (async function () {
       const cal = await getCalApi();
-      cal.ns["default"].on({
-        action: "bookingSuccessful",
-        callback: (e) => {
-          console.log("Booking successful:", e.detail);
-        },
-      });
+      // Only add event listener if cal exists
+      if (cal) {
+        cal("on", {
+          action: "bookingSuccessful",
+          callback: (e) => {
+            console.log("Booking successful:", e.detail);
+          },
+        });
+      }
     })();
   }, []);
 
@@ -27,8 +30,8 @@ export const CTASection = () => {
           
           <div className="w-full max-w-3xl mx-auto">
             <Cal
-              calLink="your-calendar-link" // Replace with your actual Cal.com link
-              style={{ width: "100%", height: "100%", overflow: "scroll" }}
+              calLink="cal_live_f9ebbbf564d59592ca234994681c9f78"
+              style={{ width: "100%", height: "700px", overflow: "hidden" }}
               config={{
                 layout: "month_view",
                 theme: "dark",
