@@ -7,7 +7,7 @@ import { CTASection } from "@/components/CTASection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-dark-200 text-white font-['Inter']">
+    <div className="min-h-screen bg-gradient-to-b from-brand-gradient-start to-brand-gradient-end text-white font-['Inter']">
       <HeroSection />
       <ProblemSection />
       <ProcessSection />

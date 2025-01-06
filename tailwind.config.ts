@@ -59,6 +59,9 @@ export default {
         brand: {
           purple: '#8B5CF6',
           pink: '#D946EF',
+          'deep-purple': '#1A1F2C',
+          'gradient-start': '#1A1F2C',
+          'gradient-end': '#2D1B4E',
         }
       },
       borderRadius: {
