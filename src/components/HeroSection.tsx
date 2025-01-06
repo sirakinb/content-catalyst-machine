@@ -31,7 +31,7 @@ export const HeroSection = () => {
         </Button>
 
         <div className="bg-[#1A1A2E] p-8 rounded-2xl mt-12 text-left">
-          <h2 className="text-2xl font-semibold mb-6 text-white">
+          <h2 className="text-2xl font-semibold mb-6 text-white text-center">
             Paste Your Transcript
           </h2>
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -77,7 +77,7 @@ export const HeroSection = () => {
               type="submit" 
               className="w-full bg-[#13131f] border-2 border-white hover:bg-white/10 transition-colors text-lg py-6 rounded-xl text-white"
             >
-              Give Me Content ✨
+              Give Me Content
             </Button>
           </form>
         </div>
