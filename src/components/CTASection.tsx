@@ -6,14 +6,12 @@ export const CTASection = () => {
   useEffect(() => {
     (async function () {
       const cal = await getCalApi();
-      if (cal) {
-        cal("on", {
-          action: "bookingSuccessful",
-          callback: (e) => {
-            console.log("Booking successful:", e.detail);
-          },
-        });
-      }
+      cal("on", {
+        action: "bookingSuccessful",
+        callback: (e) => {
+          console.log("Booking successful:", e.detail);
+        },
+      });
     })();
   }, []);
 
