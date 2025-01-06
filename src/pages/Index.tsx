@@ -4,6 +4,7 @@ import { ProcessSection } from "@/components/ProcessSection";
 import { PricingSection } from "@/components/PricingSection";
 import { FAQSection } from "@/components/FAQSection";
 import { CTASection } from "@/components/CTASection";
+import { Footer } from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 
 const Index = () => {
@@ -16,6 +17,7 @@ const Index = () => {
       <PricingSection />
       <FAQSection />
       <CTASection />
+      <Footer />
     </div>
   );
 };
