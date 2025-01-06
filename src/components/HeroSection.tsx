@@ -15,7 +15,7 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-4 py-20 mt-16">
+    <section className="min-h-screen flex flex-col items-center justify-center px-4 py-32 mt-16">
       <div className="max-w-4xl mx-auto text-center animate-fade-in">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white bg-gradient-to-r from-brand-purple to-brand-pink bg-clip-text">
           Effortlessly Fill Your Content Calendar—No Extra Time Required
