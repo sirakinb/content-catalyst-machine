@@ -18,8 +18,17 @@ export const HeroSection = () => {
     <section className="min-h-screen flex flex-col items-center justify-center px-4 py-32 mt-16">
       <div className="max-w-4xl mx-auto text-center animate-fade-in">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white bg-gradient-to-r from-brand-purple to-brand-pink bg-clip-text">
-          Try It Now: Get 4 LinkedIn Posts From Your Transcript
+          Effortlessly Fill Your Content Calendar—No Extra Time Required
         </h1>
+        <p className="text-xl md:text-2xl mb-12 text-amber-300">
+          We help you create consistent, quality content from your calls so you can focus on building your business.
+        </p>
+        <Button 
+          size="lg" 
+          className="bg-transparent border-2 border-white hover:bg-brand-purple transition-colors mb-16 text-white"
+        >
+          Implement the Content Catalyst
+        </Button>
 
         <div className="bg-[#1A1A2E] p-8 rounded-2xl mt-12 text-left">
           <h2 className="text-2xl font-semibold mb-6 text-white">
