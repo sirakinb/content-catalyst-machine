@@ -29,7 +29,7 @@ export const CTASection = () => {
               data-cal-link="akinyemi-bajulaiye-2jua88/30min"
               data-cal-namespace="30min"
               data-cal-config='{"layout":"month_view"}'
-              className="text-lg px-8 py-6 bg-brand-purple hover:bg-brand-purple/90"
+              className="text-lg px-8 py-6 border border-white bg-transparent hover:bg-white/10 transition-colors"
             >
               Schedule a Demo Call
             </Button>
