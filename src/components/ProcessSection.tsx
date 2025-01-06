@@ -34,7 +34,7 @@ export const ProcessSection = () => {
           {steps.map((step, index) => (
             <div key={step.title} className="relative animate-fade-in">
               {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-1/2 right-0 w-full h-0.5 bg-gradient-to-r from-brand-purple to-brand-pink transform translate-x-1/2" />
+                <div className="hidden md:block absolute top-1/2 right-0 w-full h-0.5 bg-white transform translate-x-1/2" />
               )}
               <div className="text-center p-6 rounded-lg bg-dark-100 relative z-10">
                 <step.icon className="w-12 h-12 mx-auto mb-4 text-gray-300" />
