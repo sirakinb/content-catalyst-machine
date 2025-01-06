@@ -19,7 +19,7 @@ export const CTASection = () => {
       
       <div className="relative py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-16 leading-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl mb-16 leading-tight">
             Learn about growing your business with AI-powered content that converts
           </h2>
           
