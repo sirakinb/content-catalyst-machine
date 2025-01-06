@@ -5,15 +5,21 @@ import { useEffect } from "react";
 export const CTASection = () => {
   useEffect(() => {
     (async function () {
-      const cal = await getCalApi();
-      // Only add event listener if cal exists
-      if (cal) {
-        cal("on", {
-          action: "bookingSuccessful",
-          callback: (e) => {
-            console.log("Booking successful:", e.detail);
-          },
-        });
+      try {
+        const cal = await getCalApi();
+        // Only add event listener if cal exists
+        if (cal) {
+          cal("on", {
+            action: "bookingSuccessful",
+            callback: (e) => {
+              console.log("Booking successful:", e.detail);
+            },
+          });
+        } else {
+          console.warn("Cal.com API not initialized properly");
+        }
+      } catch (error) {
+        console.error("Error initializing Cal.com:", error);
       }
     })();
   }, []);
