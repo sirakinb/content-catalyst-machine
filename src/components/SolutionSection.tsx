@@ -54,8 +54,8 @@ export const SolutionSection = () => {
                         className="w-24 h-24 object-contain"
                       />
                       <img 
-                        src="/lovable-uploads/8e6ee1f2-d236-4104-bc55-04e558afb805.png" 
-                        alt="Trello" 
+                        src="/lovable-uploads/900c556a-990d-4f13-b9a4-67ffb5f2d73e.png" 
+                        alt="ChatGPT" 
                         className="w-24 h-24 object-contain"
                       />
                     </div>
@@ -63,8 +63,8 @@ export const SolutionSection = () => {
                   {index === 1 && (
                     <div className="relative">
                       <img 
-                        src="/lovable-uploads/900c556a-990d-4f13-b9a4-67ffb5f2d73e.png" 
-                        alt="ChatGPT" 
+                        src="/lovable-uploads/8e6ee1f2-d236-4104-bc55-04e558afb805.png" 
+                        alt="Trello" 
                         className="w-24 h-24 object-contain"
                       />
                     </div>
