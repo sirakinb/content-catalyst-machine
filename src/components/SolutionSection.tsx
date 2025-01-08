@@ -61,10 +61,15 @@ export const SolutionSection = () => {
                     </div>
                   )}
                   {index === 1 && (
-                    <div className="relative">
+                    <div className="flex flex-col items-center gap-4">
                       <img 
                         src="/lovable-uploads/ee3a8285-af62-4ef4-a59a-68f691e986d3.png" 
                         alt="Trello" 
+                        className="w-24 h-24 object-contain"
+                      />
+                      <img 
+                        src="/lovable-uploads/92ef4d17-b0fc-4a99-9b1c-7324dc3bd168.png" 
+                        alt="Slack" 
                         className="w-24 h-24 object-contain"
                       />
                     </div>
