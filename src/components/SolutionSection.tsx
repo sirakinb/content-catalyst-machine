@@ -49,7 +49,7 @@ export const SolutionSection = () => {
                   {index === 0 && (
                     <div className="flex flex-col items-center gap-4">
                       <img 
-                        src="/lovable-uploads/376e9b87-7b9a-439a-ac20-cc4e6d1b84b0.png" 
+                        src="/lovable-uploads/12367c26-f261-4d7f-b70a-85196ad028b0.png" 
                         alt="Fathom" 
                         className="w-24 h-24 object-contain"
                       />
