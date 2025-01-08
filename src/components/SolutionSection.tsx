@@ -47,10 +47,15 @@ export const SolutionSection = () => {
               `}>
                 <div className="absolute inset-0 backdrop-blur-sm bg-white/5 flex items-center justify-center">
                   {index === 0 && (
-                    <div className="relative">
+                    <div className="flex flex-col items-center gap-4">
                       <img 
                         src="/lovable-uploads/376e9b87-7b9a-439a-ac20-cc4e6d1b84b0.png" 
                         alt="Fathom" 
+                        className="w-24 h-24 object-contain"
+                      />
+                      <img 
+                        src="/lovable-uploads/8e6ee1f2-d236-4104-bc55-04e558afb805.png" 
+                        alt="Trello" 
                         className="w-24 h-24 object-contain"
                       />
                     </div>
