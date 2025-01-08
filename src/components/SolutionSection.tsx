@@ -1,4 +1,4 @@
-import { ArrowRight, FileDocument, FileText, Share2 } from "lucide-react";
+import { ArrowRight, FileText } from "lucide-react";
 
 const steps = [
   {
@@ -48,28 +48,29 @@ export const SolutionSection = () => {
                 <div className="absolute inset-0 backdrop-blur-sm bg-white/5 flex items-center justify-center">
                   {index === 0 && (
                     <div className="relative">
-                      <FileDocument className="w-24 h-24 text-white/90" />
-                      <div className="absolute -bottom-4 -right-4 bg-brand-purple rounded-full p-2">
-                        <FileText className="w-6 h-6 text-white" />
-                      </div>
+                      <img 
+                        src="/lovable-uploads/376e9b87-7b9a-439a-ac20-cc4e6d1b84b0.png" 
+                        alt="Fathom" 
+                        className="w-24 h-24 object-contain"
+                      />
                     </div>
                   )}
                   {index === 1 && (
-                    <div className="grid grid-cols-2 gap-4">
-                      <FileText className="w-16 h-16 text-white/90" />
-                      <FileText className="w-16 h-16 text-white/90" />
-                      <FileText className="w-16 h-16 text-white/90" />
-                      <FileText className="w-16 h-16 text-white/90" />
+                    <div className="relative">
+                      <img 
+                        src="/lovable-uploads/900c556a-990d-4f13-b9a4-67ffb5f2d73e.png" 
+                        alt="ChatGPT" 
+                        className="w-24 h-24 object-contain"
+                      />
                     </div>
                   )}
                   {index === 2 && (
                     <div className="relative">
-                      <Share2 className="w-24 h-24 text-white/90" />
-                      <div className="absolute top-0 right-0 flex space-x-2">
-                        <div className="w-3 h-3 rounded-full bg-brand-pink animate-pulse" />
-                        <div className="w-3 h-3 rounded-full bg-brand-purple animate-pulse delay-100" />
-                        <div className="w-3 h-3 rounded-full bg-brand-pink animate-pulse delay-200" />
-                      </div>
+                      <img 
+                        src="/lovable-uploads/abc28c97-c92c-44c9-b2ce-b4caa1b53d5b.png" 
+                        alt="Airtable" 
+                        className="w-24 h-24 object-contain"
+                      />
                     </div>
                   )}
                 </div>
