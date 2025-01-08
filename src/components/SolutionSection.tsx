@@ -54,7 +54,7 @@ export const SolutionSection = () => {
                         className="w-24 h-24 object-contain"
                       />
                       <img 
-                        src="/lovable-uploads/900c556a-990d-4f13-b9a4-67ffb5f2d73e.png" 
+                        src="/lovable-uploads/578d321d-478e-4fc4-8955-cd2065f8faa8.png" 
                         alt="ChatGPT" 
                         className="w-24 h-24 object-contain"
                       />
