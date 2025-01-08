@@ -72,8 +72,8 @@ export const SolutionSection = () => {
                   {index === 2 && (
                     <div className="relative">
                       <img 
-                        src="/lovable-uploads/abc28c97-c92c-44c9-b2ce-b4caa1b53d5b.png" 
-                        alt="Airtable" 
+                        src="/lovable-uploads/1acd3f64-94ab-4f1d-9e72-f30ba955486e.png" 
+                        alt="Content Hub" 
                         className="w-24 h-24 object-contain"
                       />
                     </div>
