@@ -1,4 +1,4 @@
-import { ArrowRight, MessageSquare, FileText, Share2 } from "lucide-react";
+import { ArrowRight, FileDocument, FileText, Share2 } from "lucide-react";
 
 const steps = [
   {
@@ -48,7 +48,7 @@ export const SolutionSection = () => {
                 <div className="absolute inset-0 backdrop-blur-sm bg-white/5 flex items-center justify-center">
                   {index === 0 && (
                     <div className="relative">
-                      <MessageSquare className="w-24 h-24 text-white/90" />
+                      <FileDocument className="w-24 h-24 text-white/90" />
                       <div className="absolute -bottom-4 -right-4 bg-brand-purple rounded-full p-2">
                         <FileText className="w-6 h-6 text-white" />
                       </div>
