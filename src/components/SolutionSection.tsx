@@ -63,7 +63,7 @@ export const SolutionSection = () => {
                   {index === 1 && (
                     <div className="relative">
                       <img 
-                        src="/lovable-uploads/8e6ee1f2-d236-4104-bc55-04e558afb805.png" 
+                        src="/lovable-uploads/9849f046-f66d-4c15-925a-ecbe1f711ca4.png" 
                         alt="Trello" 
                         className="w-24 h-24 object-contain"
                       />
