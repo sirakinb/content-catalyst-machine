@@ -70,10 +70,15 @@ export const SolutionSection = () => {
                     </div>
                   )}
                   {index === 2 && (
-                    <div className="relative">
+                    <div className="flex flex-col items-center gap-4">
                       <img 
                         src="/lovable-uploads/1acd3f64-94ab-4f1d-9e72-f30ba955486e.png" 
                         alt="Content Hub" 
+                        className="w-24 h-24 object-contain"
+                      />
+                      <img 
+                        src="/lovable-uploads/2684b4e7-f485-4398-8047-13249cb30db6.png" 
+                        alt="Notion" 
                         className="w-24 h-24 object-contain"
                       />
                     </div>
