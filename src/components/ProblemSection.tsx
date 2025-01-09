@@ -23,7 +23,7 @@ export const ProblemSection = () => {
     <section className="py-20 px-4 bg-gradient-to-b from-brand-gradient-start to-brand-gradient-end">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
-          The Problem With Founder-Led Content
+          Common Pitfalls in Founder-Driven Content
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {problems.map((problem) => (
