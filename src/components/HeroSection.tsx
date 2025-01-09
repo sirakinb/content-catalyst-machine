@@ -67,7 +67,7 @@ export const HeroSection = () => {
             <div>
               <label className="block text-white mb-2">Topics You Post About</label>
               <Input
-                placeholder="e.g., SaaS, Marketing, Leadership"
+                placeholder="e.g., SaaS, Biotech, Leadership"
                 value={topics}
                 onChange={(e) => setTopics(e.target.value)}
                 className="bg-[#13131f] border-[#2a2a3c] text-white placeholder:text-gray-400 rounded-xl"
@@ -77,7 +77,7 @@ export const HeroSection = () => {
               type="submit" 
               className="w-full bg-[#13131f] border-2 border-white hover:bg-white/10 transition-colors text-lg py-6 rounded-xl text-white"
             >
-              Give Me Content
+              Give Me Content Right Now
             </Button>
           </form>
         </div>
