@@ -54,6 +54,7 @@ export const PricingSection = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
           Choose Your Content Journey
         </h2>
+        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {plans.map((plan) => (
             <div
@@ -92,13 +93,13 @@ export const PricingSection = () => {
           ))}
         </div>
 
-        {/* Maintenance Subscription Section */}
+        {/* Automation Support Plan Section */}
         <div className="mt-16 p-8 rounded-lg bg-dark-200 max-w-4xl mx-auto animate-fade-in">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-2">Maintenance Subscription</h3>
+              <h3 className="text-2xl font-bold mb-2">Automation Support Plan</h3>
               <p className="text-gray-400 mb-4">
-                Coverage of your automations and AI tokens
+                A complete solution for maintaining your automations and LLM fees
               </p>
               <div className="text-4xl font-bold">
                 $60/month
@@ -106,13 +107,13 @@ export const PricingSection = () => {
             </div>
             
             <div>
-              <h4 className="text-lg font-semibold mb-4">What's included:</h4>
+              <h4 className="text-lg font-semibold mb-4">What's Included</h4>
               <ul className="space-y-3">
                 {[
-                  "Automation costs",
-                  "AI token costs",
-                  "Support",
-                  "New feature releases"
+                  "Automation cost coverage",
+                  "AI tokens",
+                  "Customer support",
+                  "New feature rollouts"
                 ].map((feature) => (
                   <li key={feature} className="flex items-center">
                     <Check className="w-5 h-5 mr-2 text-brand-purple" />
@@ -125,7 +126,7 @@ export const PricingSection = () => {
         </div>
 
         <div className="mt-8 text-center text-gray-400">
-          All plans come with our 30-day money-back guarantee. <a href="#" className="text-white underline">Try Content-Catalyst risk-free!</a>
+          Enjoy peace of mind with our 30-day money-back promise. <a href="#" className="text-white underline">Sign up for Content-Catalyst risk-free today!</a>
         </div>
 
         <FeatureComparison />
