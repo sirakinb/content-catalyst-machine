@@ -12,7 +12,7 @@ const steps = [
     imagePosition: "left"
   },
   {
-    title: "Streamline your\ncontent workflow",
+    title: "Your Automated\nContent Machine",
     description: "Once approved, Content-Catalyst transforms your ideas into polished posts and delivers them directly to your content hub, ready for final edits and scheduling. Simple, efficient, and collaborative",
     imagePosition: "right"
   }
@@ -23,7 +23,7 @@ export const SolutionSection = () => {
     <section className="py-20 px-4 bg-gradient-to-b from-brand-gradient-end to-brand-gradient-start">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
-          Your Automated Content Machine
+          Streamline your content workflow
         </h2>
         {steps.map((step, index) => (
           <div 
