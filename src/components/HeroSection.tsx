@@ -57,7 +57,7 @@ export const HeroSection = () => {
               <div>
                 <label className="block text-white mb-2">Speaker Name in the Transcript</label>
                 <Input
-                  placeholder="John Doe"
+                  placeholder="Usually Your Full Name"
                   value={speakerName}
                   onChange={(e) => setSpeakerName(e.target.value)}
                   className="bg-[#13131f] border-[#2a2a3c] text-white placeholder:text-gray-400 rounded-xl"
