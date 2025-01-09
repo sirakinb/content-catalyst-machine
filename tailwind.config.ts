@@ -62,6 +62,7 @@ export default {
           'deep-purple': '#1A1F2C',
           'gradient-start': '#130B1D',
           'gradient-end': '#0C0817',
+          'hover-blue': '#1A1B26'
         }
       },
       borderRadius: {
