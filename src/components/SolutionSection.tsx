@@ -12,7 +12,7 @@ const steps = [
     imagePosition: "left"
   },
   {
-    title: "Streamline your content workflow",
+    title: "Your Automated\nContent Machine",
     description: "Once approved, Content-Catalyst transforms your ideas into polished posts and delivers them directly to your content hub, ready for final edits and scheduling. Simple, efficient, and collaborative",
     imagePosition: "right"
   }
@@ -31,7 +31,7 @@ export const SolutionSection = () => {
             className={`flex flex-col ${step.imagePosition === 'right' ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8 mb-20 last:mb-0 animate-fade-in`}
           >
             <div className="flex-1 text-left">
-              <h3 className="text-2xl md:text-3xl mb-4 text-white">{step.title}</h3>
+              <h3 className="text-2xl md:text-3xl mb-4 text-white whitespace-pre-line">{step.title}</h3>
               <p className="text-gray-300 leading-relaxed mb-6">{step.description}</p>
               {index < steps.length - 1 && (
                 <ArrowRight className="w-6 h-6 text-brand-purple mx-auto md:mx-0 rotate-90 md:rotate-0" />
