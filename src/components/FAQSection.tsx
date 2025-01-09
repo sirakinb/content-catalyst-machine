@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     question: "Can content creation really be automated?",
-    answer: "Absolutely! We take what you already say, the conversations you're having about your product or service, and the pain points you discuss with prospects and customers. Then we help you capture more of that value through repurposed content that is put on autopilot for you.",
+    answer: "We take what you already say, whether it's the conversations you're having about your product or service, or discussion about your prospects and customer's pain points. Then we help you capture more of that value through repurposed content that is put on autopilot for you.",
   },
 ];
 
