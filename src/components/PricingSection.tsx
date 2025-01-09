@@ -7,6 +7,7 @@ const plans = [
     name: "Starter",
     price: "$349",
     description: "Set Up Fee",
+    tagline: "Craft professional posts directly from your call transcripts with ease",
     features: [
       "Content-Catalyst Trello Agent",
       "LinkedIn Post Creation",
@@ -19,6 +20,7 @@ const plans = [
     name: "Momentum",
     price: "$879",
     description: "Set Up Fee",
+    tagline: "Expand your content across multiple platforms",
     features: [
       "Everything from the Starter plan",
       "Multi-Platform Content Creation: Generate content for LinkedIn, Twitter, Instagram, and Blogs",
@@ -33,6 +35,7 @@ const plans = [
     name: "Enterprise",
     price: "Custom",
     description: "Pricing",
+    tagline: "A fully customized content automation suite for your CRM and tech stack",
     features: [
       "Everything from the Momentum plan",
       "Actionable Task Automation in Airtable",
@@ -67,21 +70,22 @@ export const PricingSection = () => {
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
                 <div className="text-4xl font-bold mb-2">{plan.price}</div>
-                <div className="text-gray-400">{plan.description}</div>
+                <div className="text-gray-400 mb-4">{plan.description}</div>
+                <p className="text-sm text-gray-300 mb-6">{plan.tagline}</p>
+                <Button
+                  className="w-full bg-brand-purple transition-transform duration-300 hover:scale-105 mb-8"
+                >
+                  {plan.cta}
+                </Button>
               </div>
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-4">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-center">
-                    <Check className="w-5 h-5 mr-2 text-brand-purple" />
+                    <Check className="w-5 h-5 min-w-[1.25rem] mr-2 text-brand-purple" />
                     <span>{feature}</span>
                   </li>
                 ))}
               </ul>
-              <Button
-                className="w-full bg-brand-purple transition-transform duration-300 hover:scale-105"
-              >
-                {plan.cta}
-              </Button>
             </div>
           ))}
         </div>
