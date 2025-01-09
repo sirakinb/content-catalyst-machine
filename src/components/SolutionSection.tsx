@@ -2,7 +2,7 @@ import { ArrowRight, FileText } from "lucide-react";
 
 const steps = [
   {
-    title: "Your Automated Content Machine",
+    title: "Capture your best insights",
     description: "Content-Catalyst extracts your top ideas from conversations with prospects, clients, and meeting participants—no more struggling with blank pages. Let your words spark content creation instantly",
     imagePosition: "right"
   },
