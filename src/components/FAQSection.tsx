@@ -8,19 +8,19 @@ import {
 const faqs = [
   {
     question: "How do you create content customized to my brand voice?",
-    answer: "We begin with a brand audit, then refine posts based on your feedback.",
+    answer: "Our system uses advanced LLM prompting in automated workflows, learning from your past content and samples to understand your unique voice. It's a self-improving system that gets better at matching your tone and style over time.",
   },
   {
     question: "What types of content will you handle?",
-    answer: "We specialize in short-form text for LinkedIn, Twitter, and blog blurbs; we can adapt further if needed.",
+    answer: "We specialize in short-form text for LinkedIn, Twitter, and blog posts. Other channels and formats can be included upon request to match your specific needs.",
   },
   {
     question: "Do you offer any money-back guarantees?",
-    answer: "We stand behind our work—ask us about our satisfaction policies.",
+    answer: "Yes! If you're not satisfied in the first 30 days, you get your money back - there's no risk to try our service.",
   },
   {
     question: "Can content creation really be automated?",
-    answer: "With the right tools and process, yes! We blend AI-driven drafts with real human touch.",
+    answer: "Absolutely! We take what you already say, the conversations you're having about your product or service, and the pain points you discuss with prospects and customers. Then we help you capture more of that value through repurposed content that is put on autopilot for you.",
   },
 ];
 
