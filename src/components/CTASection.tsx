@@ -24,18 +24,15 @@ export const CTASection = () => {
           </h2>
           
           <div className="w-full max-w-3xl mx-auto">
-            <a 
-              href="https://calendly.com/pentridgemedia/content-catalyst" 
-              target="_blank" 
-              rel="noopener noreferrer"
+            <Button
+              size="lg"
+              data-cal-link="akinyemi-bajulaiye-2jua88/30min"
+              data-cal-namespace="30min"
+              data-cal-config='{"layout":"month_view"}'
+              className="text-lg px-8 py-6 border border-white bg-transparent text-white transition-transform duration-300 hover:scale-105 hover:bg-brand-hover-blue hover:border-brand-hover-blue hover:text-white"
             >
-              <Button
-                size="lg"
-                className="text-lg px-8 py-6 border border-white bg-transparent text-white transition-transform duration-300 hover:scale-105 hover:bg-brand-hover-blue hover:border-brand-hover-blue hover:text-white"
-              >
-                Schedule a Demo Call
-              </Button>
-            </a>
+              Schedule a Demo Call
+            </Button>
           </div>
         </div>
       </div>

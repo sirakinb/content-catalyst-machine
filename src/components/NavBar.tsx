@@ -25,18 +25,15 @@ const NavBar = () => {
           <a href="https://pentridgemedia.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">Pentridge Media</a>
         </div>
         
-        <a 
-          href="https://calendly.com/pentridgemedia/content-catalyst" 
-          target="_blank" 
-          rel="noopener noreferrer"
+        <Button 
+          variant="outline" 
+          data-cal-link="akinyemi-bajulaiye-2jua88/30min"
+          data-cal-namespace="30min"
+          data-cal-config='{"layout":"month_view"}'
+          className="bg-transparent text-white border-2 border-white transition-transform duration-300 hover:scale-105 hover:bg-brand-hover-blue hover:border-brand-hover-blue hover:text-white"
         >
-          <Button 
-            variant="outline" 
-            className="bg-transparent text-white border-2 border-white transition-transform duration-300 hover:scale-105 hover:bg-brand-hover-blue hover:border-brand-hover-blue hover:text-white"
-          >
-            Book a Demo
-          </Button>
-        </a>
+          Book a Demo
+        </Button>
       </div>
     </nav>
   );
