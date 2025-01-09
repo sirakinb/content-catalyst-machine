@@ -14,6 +14,13 @@ export const HeroSection = () => {
     console.log("Form submitted:", { email, transcript, speakerName, topics });
   };
 
+  const scrollToPricing = () => {
+    const element = document.getElementById('pricing');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 py-32 mt-16">
       <div className="max-w-4xl mx-auto text-center animate-fade-in">
@@ -26,6 +33,7 @@ export const HeroSection = () => {
         <Button 
           size="lg" 
           className="bg-transparent border-2 border-white hover:bg-brand-hover-blue hover:border-brand-hover-blue transition-colors mb-16 text-white"
+          onClick={scrollToPricing}
         >
           Implement the Content Catalyst
         </Button>
