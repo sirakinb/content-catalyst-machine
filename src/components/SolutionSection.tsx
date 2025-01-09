@@ -12,7 +12,7 @@ const steps = [
     imagePosition: "left"
   },
   {
-    title: "Your Automated\nContent Machine",
+    title: "Streamline your\ncontent workflow",
     description: "Once approved, Content-Catalyst transforms your ideas into polished posts and delivers them directly to your content hub, ready for final edits and scheduling. Simple, efficient, and collaborative",
     imagePosition: "right"
   }
