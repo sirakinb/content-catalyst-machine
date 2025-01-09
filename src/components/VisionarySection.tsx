@@ -2,11 +2,11 @@ import { Check } from "lucide-react";
 
 export const VisionarySection = () => {
   const benefits = [
-    "Effortlessly generate content from your everyday conversations",
-    "Eliminate the frustration of staring at a blank screen",
-    "Transform your best insights into powerful, lead-generating content that nurtures and converts",
-    "Stay consistent with a daily posting schedule to keep the algorithm working in your favor",
-    "Repurpose your content ideas more efficiently than ever before"
+    "Turn everyday conversations and meetings into engaging content",
+    "Say goodbye to creative block and the stress of a blank screen",
+    "Convert your best ideas into impactful content that drives leads and sales",
+    "Maintain a steady posting rhythm to keep the algorithm working in your favor",
+    "Recycle and refresh your content ideas faster than ever before"
   ];
 
   return (
@@ -14,12 +14,12 @@ export const VisionarySection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            You are a Visionary.
+            Increase Your Reach.
             <br />
-            Expand Your Impact.
+            Amplify Your Impact.
           </h2>
           <p className="text-xl text-brand-purple mb-12">
-            With Call-to-Content, you can:
+            With Content-Catalyst, you can:
           </p>
         </div>
         
