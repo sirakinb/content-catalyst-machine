@@ -67,25 +67,27 @@ export const PricingSection = () => {
                   Most Popular
                 </span>
               )}
-              <div className="text-center mb-8">
+              <div className="text-center">
                 <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
+                <p className="text-sm text-gray-300 mb-4">{plan.tagline}</p>
                 <div className="text-4xl font-bold mb-2">{plan.price}</div>
-                <div className="text-gray-400 mb-4">{plan.description}</div>
-                <p className="text-sm text-gray-300 mb-6">{plan.tagline}</p>
+                <div className="text-gray-400 mb-6">{plan.description}</div>
+              </div>
+              <div className="flex flex-col h-full">
                 <Button
                   className="w-full bg-brand-purple transition-transform duration-300 hover:scale-105 mb-8"
                 >
                   {plan.cta}
                 </Button>
+                <ul className="space-y-4">
+                  {plan.features.map((feature) => (
+                    <li key={feature} className="flex items-center">
+                      <Check className="w-5 h-5 min-w-[1.25rem] mr-2 text-brand-purple" />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <ul className="space-y-4">
-                {plan.features.map((feature) => (
-                  <li key={feature} className="flex items-center">
-                    <Check className="w-5 h-5 min-w-[1.25rem] mr-2 text-brand-purple" />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
           ))}
         </div>
