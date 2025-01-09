@@ -72,15 +72,15 @@ export const PricingSection = () => {
                 <p className="text-sm text-gray-300 mb-4">{plan.tagline}</p>
                 <div className={`text-4xl font-bold mb-2 ${plan.popular ? "mt-6" : ""}`}>{plan.price}</div>
                 <div className="text-gray-400 mb-6">{plan.description}</div>
-              </div>
-              <div className="flex flex-col h-full">
                 <Button
                   className={`w-full bg-brand-purple transition-transform duration-300 hover:scale-105 mb-8 ${
-                    plan.popular ? "mt-4" : ""
+                    plan.popular ? "mt-2" : ""
                   }`}
                 >
                   {plan.cta}
                 </Button>
+              </div>
+              <div className="flex flex-col h-full">
                 <ul className="space-y-4">
                   {plan.features.map((feature) => (
                     <li key={feature} className="flex items-center">
