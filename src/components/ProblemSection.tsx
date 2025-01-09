@@ -20,7 +20,7 @@ const problems = [
 
 export const ProblemSection = () => {
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-brand-gradient-start to-brand-gradient-end">
+    <section id="problem" className="py-20 px-4 bg-gradient-to-b from-brand-gradient-start to-brand-gradient-end">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
           Common Pitfalls in Founder-Driven Content

@@ -49,7 +49,7 @@ const plans = [
 
 export const PricingSection = () => {
   return (
-    <section className="py-20 px-4 bg-dark-100">
+    <section id="pricing" className="py-20 px-4 bg-dark-100">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
           Choose Your Content Journey

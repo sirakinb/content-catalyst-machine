@@ -2,6 +2,13 @@ import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 
 const NavBar = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="absolute top-0 left-0 right-0 z-50 px-6 py-4 bg-[#130B1D]">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -12,18 +19,24 @@ const NavBar = () => {
         </div>
         
         <div className="hidden md:flex items-center gap-12">
-          <Link to="#problem" className="text-white hover:text-gray-300">Problem</Link>
-          <Link to="#solution" className="text-white hover:text-gray-300">Solution</Link>
-          <Link to="#pricing" className="text-white hover:text-gray-300">Pricing</Link>
+          <button onClick={() => scrollToSection('problem')} className="text-white hover:text-gray-300">Problem</button>
+          <button onClick={() => scrollToSection('solution')} className="text-white hover:text-gray-300">Solution</button>
+          <button onClick={() => scrollToSection('pricing')} className="text-white hover:text-gray-300">Pricing</button>
           <a href="https://pentridgemedia.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">Pentridge Media</a>
         </div>
         
-        <Button 
-          variant="outline" 
-          className="bg-transparent text-white border-2 border-white transition-transform duration-300 hover:scale-105 hover:bg-brand-hover-blue hover:border-brand-hover-blue hover:text-white"
+        <a 
+          href="https://calendly.com/pentridgemedia/content-catalyst" 
+          target="_blank" 
+          rel="noopener noreferrer"
         >
-          Book a Demo
-        </Button>
+          <Button 
+            variant="outline" 
+            className="bg-transparent text-white border-2 border-white transition-transform duration-300 hover:scale-105 hover:bg-brand-hover-blue hover:border-brand-hover-blue hover:text-white"
+          >
+            Book a Demo
+          </Button>
+        </a>
       </div>
     </nav>
   );
