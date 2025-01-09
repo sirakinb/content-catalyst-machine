@@ -20,7 +20,7 @@ const NavBar = () => {
         
         <Button 
           variant="outline" 
-          className="bg-transparent text-white border-2 border-white transition-transform duration-300 hover:scale-105"
+          className="bg-transparent text-white border-2 border-white transition-transform duration-300 hover:scale-105 hover:bg-brand-purple hover:border-brand-purple"
         >
           Book a Demo
         </Button>

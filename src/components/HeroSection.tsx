@@ -25,7 +25,7 @@ export const HeroSection = () => {
         </p>
         <Button 
           size="lg" 
-          className="bg-transparent border-2 border-white hover:bg-brand-purple transition-colors mb-16 text-white"
+          className="bg-transparent border-2 border-white hover:bg-brand-purple hover:border-brand-purple transition-colors mb-16 text-white"
         >
           Implement the Content Catalyst
         </Button>
@@ -75,7 +75,7 @@ export const HeroSection = () => {
             </div>
             <Button 
               type="submit" 
-              className="w-full bg-[#13131f] border-2 border-white hover:bg-white/10 transition-colors text-lg py-6 rounded-xl text-white"
+              className="w-full bg-[#13131f] border-2 border-white hover:bg-brand-purple hover:border-brand-purple transition-colors text-lg py-6 rounded-xl text-white"
             >
               Give Me Content Right Now
             </Button>
