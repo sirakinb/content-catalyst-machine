@@ -85,14 +85,14 @@ export const PricingSection = () => {
                 {plan.stripeLink ? (
                   <a href={plan.stripeLink} target="_blank" rel="noopener noreferrer">
                     <Button
-                      className={`w-full bg-brand-purple transition-transform duration-300 hover:scale-105 mb-4`}
+                      className="w-full bg-brand-purple transition-transform duration-300 hover:scale-105 mb-4"
                     >
                       {plan.cta}
                     </Button>
                   </a>
                 ) : (
                   <Button
-                    className={`w-full bg-brand-purple transition-transform duration-300 hover:scale-105 mb-4`}
+                    className="w-full bg-brand-purple transition-transform duration-300 hover:scale-105 mb-4"
                     onClick={scrollToDemo}
                   >
                     {plan.cta}
@@ -113,7 +113,6 @@ export const PricingSection = () => {
           ))}
         </div>
 
-      {/* Automation Support Plan Section */}
         <div className="mt-16 p-8 rounded-lg bg-dark-200 max-w-4xl mx-auto animate-fade-in">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
@@ -145,11 +144,12 @@ export const PricingSection = () => {
           </div>
         </div>
 
-      <div className="mt-8 text-center text-gray-400">
-        Enjoy peace of mind with our 30-day money-back promise. <a href="#" className="text-white underline">Sign up for Content-Catalyst risk-free today!</a>
-      </div>
+        <div className="mt-8 text-center text-gray-400">
+          Enjoy peace of mind with our 30-day money-back promise. <a href="#" className="text-white underline">Sign up for Content-Catalyst risk-free today!</a>
+        </div>
 
-      <FeatureComparison />
+        <FeatureComparison />
+      </div>
     </section>
   );
 };
