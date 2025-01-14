@@ -10,7 +10,7 @@ const plans = [
     tagline: "Craft professional posts directly from your call transcripts with ease",
     features: [
       "Content-Catalyst Trello Agent",
-      "LinkedIn Post Creation",
+      "LinkedIn Post Creation", 
       "Customized Setup & Onboarding",
       "1-Hour Automation Strategy Session: Receive expert advice to optimize your content",
     ],
@@ -51,7 +51,7 @@ const plans = [
 
 export const PricingSection = () => {
   const scrollToDemo = () => {
-    const demoSection = document.querySelector('[data-cal-link]');
+    const demoSection = document.getElementById('demo');
     if (demoSection) {
       demoSection.scrollIntoView({ behavior: 'smooth' });
     }
