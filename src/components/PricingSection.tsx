@@ -50,11 +50,11 @@ const plans = [
 ];
 
 export const PricingSection = () => {
-  const openCalendar = () => {
-    const demoButton = document.querySelector('[data-cal-link="akinyemi-bajulaiye-2jua88/30min"]');
-    if (demoButton instanceof HTMLElement) {
-      demoButton.click();
-    }
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: 'smooth'
+    });
   };
 
   return (
@@ -93,10 +93,7 @@ export const PricingSection = () => {
                 ) : (
                   <Button
                     className="w-full bg-brand-purple transition-transform duration-300 hover:scale-105 mb-4"
-                    onClick={openCalendar}
-                    data-cal-link="akinyemi-bajulaiye-2jua88/30min"
-                    data-cal-namespace="demo"
-                    data-cal-config='{"layout":"month_view"}'
+                    onClick={scrollToBottom}
                   >
                     {plan.cta}
                   </Button>
