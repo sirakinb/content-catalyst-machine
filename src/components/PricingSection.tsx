@@ -15,6 +15,7 @@ const plans = [
       "1-Hour Automation Strategy Session: Receive expert advice to optimize your content",
     ],
     cta: "Get Started",
+    stripeLink: "https://buy.stripe.com/3cs5m8h20784e405kl"
   },
   {
     name: "Momentum",
@@ -29,6 +30,7 @@ const plans = [
       "Priority Customer Support",
     ],
     cta: "Build Momentum",
+    stripeLink: "https://buy.stripe.com/5kAdSE7rqfEAf846oq",
     popular: true,
   },
   {
@@ -48,6 +50,13 @@ const plans = [
 ];
 
 export const PricingSection = () => {
+  const scrollToDemo = () => {
+    const demoSection = document.querySelector('[data-cal-link]');
+    if (demoSection) {
+      demoSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="pricing" className="py-20 px-4 bg-dark-100">
       <div className="max-w-6xl mx-auto">
@@ -73,11 +82,22 @@ export const PricingSection = () => {
                 <p className="text-sm text-gray-300 mb-4">{plan.tagline}</p>
                 <div className={`text-4xl font-bold mb-2 ${plan.popular ? "mt-6" : ""}`}>{plan.price}</div>
                 <div className="text-gray-400 mb-2">{plan.description}</div>
-                <Button
-                  className={`w-full bg-brand-purple transition-transform duration-300 hover:scale-105 mb-4`}
-                >
-                  {plan.cta}
-                </Button>
+                {plan.stripeLink ? (
+                  <a href={plan.stripeLink} target="_blank" rel="noopener noreferrer">
+                    <Button
+                      className={`w-full bg-brand-purple transition-transform duration-300 hover:scale-105 mb-4`}
+                    >
+                      {plan.cta}
+                    </Button>
+                  </a>
+                ) : (
+                  <Button
+                    className={`w-full bg-brand-purple transition-transform duration-300 hover:scale-105 mb-4`}
+                    onClick={scrollToDemo}
+                  >
+                    {plan.cta}
+                  </Button>
+                )}
               </div>
               <div className="flex flex-col h-full">
                 <ul className="space-y-4">
