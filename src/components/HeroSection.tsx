@@ -15,24 +15,33 @@ export const HeroSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    console.log("Submitting form data to webhook...");
+    
+    const payload = {
+      email,
+      transcript,
+      speakerName,
+      topics,
+    };
+    
+    console.log("Preparing to submit payload:", payload);
 
     try {
       const response = await fetch('https://hook.us2.make.com/w6cfuc6jq7daihi32bh2uexx0f65p8hv', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json',
         },
-        body: JSON.stringify({
-          email,
-          transcript,
-          speakerName,
-          topics,
-        }),
+        body: JSON.stringify(payload),
       });
 
+      console.log("Webhook response status:", response.status);
+      
+      const responseText = await response.text();
+      console.log("Webhook response body:", responseText);
+
       if (!response.ok) {
-        throw new Error('Failed to submit form');
+        throw new Error(`Webhook failed with status ${response.status}: ${responseText}`);
       }
 
       console.log("Form submitted successfully");
