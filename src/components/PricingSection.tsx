@@ -51,9 +51,9 @@ const plans = [
 
 export const PricingSection = () => {
   const scrollToDemo = () => {
-    const demoSection = document.getElementById('demo');
-    if (demoSection) {
-      demoSection.scrollIntoView({ behavior: 'smooth' });
+    const ctaSection = document.getElementById('cta');
+    if (ctaSection) {
+      ctaSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -113,7 +113,7 @@ export const PricingSection = () => {
           ))}
         </div>
 
-        {/* Automation Support Plan Section */}
+      {/* Automation Support Plan Section */}
         <div className="mt-16 p-8 rounded-lg bg-dark-200 max-w-4xl mx-auto animate-fade-in">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
@@ -145,12 +145,11 @@ export const PricingSection = () => {
           </div>
         </div>
 
-        <div className="mt-8 text-center text-gray-400">
-          Enjoy peace of mind with our 30-day money-back promise. <a href="#" className="text-white underline">Sign up for Content-Catalyst risk-free today!</a>
-        </div>
-
-        <FeatureComparison />
+      <div className="mt-8 text-center text-gray-400">
+        Enjoy peace of mind with our 30-day money-back promise. <a href="#" className="text-white underline">Sign up for Content-Catalyst risk-free today!</a>
       </div>
+
+      <FeatureComparison />
     </section>
   );
 };

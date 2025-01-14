@@ -1,40 +1,18 @@
-import { getCalApi } from "@calcom/embed-react";
-import { useEffect } from "react";
-import { Button } from "./ui/button";
-
 export const CTASection = () => {
-  useEffect(() => {
-    (async function () {
-      const cal = await getCalApi({ namespace: "30min" });
-      cal("ui", {
-        hideEventTypeDetails: false,
-        layout: "month_view"
-      });
-    })();
-  }, []);
-
   return (
-    <section className="relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-brand-gradient-start to-brand-gradient-end pointer-events-none" />
-      
-      <div className="relative py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl mb-16 leading-tight">
-            Learn about growing your business with AI-powered content that converts
-          </h2>
-          
-          <div className="w-full max-w-3xl mx-auto">
-            <Button
-              size="lg"
-              data-cal-link="akinyemi-bajulaiye-2jua88/30min"
-              data-cal-namespace="30min"
-              data-cal-config='{"layout":"month_view"}'
-              className="text-lg px-8 py-6 border border-white bg-transparent text-white transition-transform duration-300 hover:scale-105 hover:bg-brand-hover-blue hover:border-brand-hover-blue hover:text-white"
-            >
-              Schedule a Demo Call
-            </Button>
-          </div>
-        </div>
+    <section id="cta" className="py-20 px-4">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+          Ready to Transform Your Content Strategy?
+        </h2>
+        <p className="text-lg mb-8 text-gray-400">
+          Schedule a demo call with us to see how Content Catalyst can work for you.
+        </p>
+        <a href="https://calendly.com/your-scheduling-link" target="_blank" rel="noopener noreferrer">
+          <button className="bg-brand-purple text-white py-3 px-6 rounded-lg hover:bg-brand-hover-blue transition-colors">
+            Schedule a Demo Call
+          </button>
+        </a>
       </div>
     </section>
   );
