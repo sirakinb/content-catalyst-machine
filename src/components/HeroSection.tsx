@@ -1,17 +1,61 @@
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Input } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
+import { useToast } from "@/components/ui/use-toast";
 
 export const HeroSection = () => {
   const [email, setEmail] = useState("");
   const [transcript, setTranscript] = useState("");
   const [speakerName, setSpeakerName] = useState("");
   const [topics, setTopics] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", { email, transcript, speakerName, topics });
+    setIsSubmitting(true);
+    console.log("Submitting form data to webhook...");
+
+    try {
+      const response = await fetch('https://hook.us2.make.com/w6cfuc6jq7daihi32bh2uexx0f65p8hv', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email,
+          transcript,
+          speakerName,
+          topics,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to submit form');
+      }
+
+      console.log("Form submitted successfully");
+      toast({
+        title: "Success!",
+        description: "Your transcript has been submitted successfully.",
+      });
+
+      // Clear form
+      setEmail("");
+      setTranscript("");
+      setSpeakerName("");
+      setTopics("");
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast({
+        title: "Error",
+        description: "Failed to submit your transcript. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const scrollToPricing = () => {
@@ -49,6 +93,7 @@ export const HeroSection = () => {
                 value={transcript}
                 onChange={(e) => setTranscript(e.target.value)}
                 className="min-h-[150px] bg-[#13131f] border-[#2a2a3c] text-white placeholder:text-gray-400 rounded-xl"
+                disabled={isSubmitting}
               />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -60,6 +105,8 @@ export const HeroSection = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="bg-[#13131f] border-[#2a2a3c] text-white placeholder:text-gray-400 rounded-xl"
+                  disabled={isSubmitting}
+                  required
                 />
               </div>
               <div>
@@ -69,6 +116,8 @@ export const HeroSection = () => {
                   value={speakerName}
                   onChange={(e) => setSpeakerName(e.target.value)}
                   className="bg-[#13131f] border-[#2a2a3c] text-white placeholder:text-gray-400 rounded-xl"
+                  disabled={isSubmitting}
+                  required
                 />
               </div>
             </div>
@@ -79,13 +128,16 @@ export const HeroSection = () => {
                 value={topics}
                 onChange={(e) => setTopics(e.target.value)}
                 className="bg-[#13131f] border-[#2a2a3c] text-white placeholder:text-gray-400 rounded-xl"
+                disabled={isSubmitting}
+                required
               />
             </div>
             <Button 
               type="submit" 
               className="w-full bg-[#13131f] border-2 border-white hover:bg-brand-hover-blue hover:border-brand-hover-blue transition-colors text-lg py-6 rounded-xl text-white"
+              disabled={isSubmitting}
             >
-              Give Me Content Right Now
+              {isSubmitting ? "Submitting..." : "Give Me Content Right Now"}
             </Button>
           </form>
         </div>
