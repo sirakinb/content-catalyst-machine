@@ -51,9 +51,9 @@ const plans = [
 
 export const PricingSection = () => {
   const scrollToDemo = () => {
-    const ctaSection = document.getElementById('cta');
-    if (ctaSection) {
-      ctaSection.scrollIntoView({ behavior: 'smooth' });
+    const demoButton = document.querySelector('[data-cal-link="akinyemi-bajulaiye-2jua88/30min"]');
+    if (demoButton instanceof HTMLElement) {
+      demoButton.click();
     }
   };
 
