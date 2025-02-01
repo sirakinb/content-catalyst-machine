@@ -7,8 +7,8 @@ const steps = [
     imagePosition: "right"
   },
   {
-    title: "Turn conversations into content instantly",
-    description: "Content-Catalyst identifies valuable ideas from your call transcripts and sends them to Slack or Trello for your review—within minutes. creation powered by intelligent automation",
+    title: "Turn conversations into postable content",
+    description: "Content-Catalyst identifies valuable ideas from your call transcripts and automatically translates them into quality, authentic content in your voice for review—within minutes.",
     imagePosition: "left"
   },
   {
