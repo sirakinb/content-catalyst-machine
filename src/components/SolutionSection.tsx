@@ -85,7 +85,7 @@ export const SolutionSection = () => {
                         className="w-24 h-24 object-contain"
                       />
                       <img 
-                        src="/lovable-uploads/2684b4e7-f485-4398-8047-13249cb30db6.png" 
+                        src="/lovable-uploads/5dabea7b-3133-4b98-bcb8-312fd7efc7e6.png" 
                         alt="Notion" 
                         className="w-24 h-24 object-contain"
                       />
