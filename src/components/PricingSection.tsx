@@ -9,7 +9,7 @@ const plans = [
     description: "Set Up Fee",
     tagline: "Craft professional posts directly from your call transcripts with ease",
     features: [
-      "Content Approval Hub",
+      "Personal Content Hub",
       "LinkedIn Post Creation", 
       "Customized Setup & Onboarding",
       "1-Hour Automation Strategy Session: Receive expert advice to optimize your content",

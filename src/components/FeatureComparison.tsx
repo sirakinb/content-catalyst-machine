@@ -2,7 +2,7 @@ import { Check } from "lucide-react";
 
 const features = [
   {
-    name: "Content Approval Hub",
+    name: "Personal Content Hub",
     starter: true,
     momentum: true,
     enterprise: true,
@@ -52,7 +52,7 @@ const features = [
   {
     name: "Actionable Task Automation in Airtable",
     starter: false,
-    momentum: false,
+    momentum: true,
     enterprise: true,
   },
   {
