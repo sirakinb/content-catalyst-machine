@@ -13,7 +13,7 @@ const steps = [
   },
   {
     title: "Your Automated\nContent Machine",
-    description: "Once approved, Content-Catalyst transforms your ideas into polished posts and delivers them directly to your content hub, ready for final edits and scheduling. Simple, efficient, and collaborative",
+    description: "Content Catalyst delivers your polished posts to a personal content hub, where you can finalize edits before scheduling or automatically distributing. It's simple, efficient, and collaborative",
     imagePosition: "right"
   }
 ];
