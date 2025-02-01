@@ -52,13 +52,13 @@ export const SolutionSection = () => {
                   {index === 0 && (
                     <div className="flex flex-col items-center gap-4">
                       <img 
-                        src="/lovable-uploads/8238179a-c7f1-4a9d-8894-7d7bf8035eea.png" 
-                        alt="Whale Logo" 
+                        src="/lovable-uploads/d4ef8b2a-04fd-4478-8cea-fdaa0756150b.png" 
+                        alt="Google Meet Logo" 
                         className="w-24 h-24 object-contain"
                       />
                       <img 
-                        src="/lovable-uploads/df02ca03-2987-459f-85ba-a13d5b709ca5.png" 
-                        alt="ChatGPT" 
+                        src="/lovable-uploads/6425c1aa-867d-4ea7-8d2c-ff556143906a.png" 
+                        alt="Zoom Logo" 
                         className="w-24 h-24 object-contain"
                       />
                     </div>
