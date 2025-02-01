@@ -26,7 +26,7 @@ export const HeroSection = () => {
     console.log("Preparing to submit payload:", payload);
 
     try {
-      const response = await fetch('https://hook.us2.make.com/w6cfuc6jq7daihi32bh2uexx0f65p8hv', {
+      const response = await fetch('https://hook.us2.make.com/qfpu82dk67gwqbq0sc5otfy21ecy0w8i', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
