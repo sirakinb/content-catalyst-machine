@@ -50,17 +50,28 @@ export const SolutionSection = () => {
               `}>
                 <div className="absolute inset-0 backdrop-blur-sm bg-white/5 flex items-center justify-center">
                   {index === 0 && (
-                    <div className="flex flex-col items-center gap-4">
-                      <img 
-                        src="/lovable-uploads/d4ef8b2a-04fd-4478-8cea-fdaa0756150b.png" 
-                        alt="Google Meet Logo" 
-                        className="w-24 h-24 object-contain"
-                      />
-                      <img 
-                        src="/lovable-uploads/6425c1aa-867d-4ea7-8d2c-ff556143906a.png" 
-                        alt="Zoom Logo" 
-                        className="w-24 h-24 object-contain"
-                      />
+                    <div className="flex flex-col items-center gap-4 relative w-full h-full">
+                      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                        <img 
+                          src="/lovable-uploads/d4ef8b2a-04fd-4478-8cea-fdaa0756150b.png" 
+                          alt="Google Meet Logo" 
+                          className="w-20 h-20 object-contain"
+                        />
+                      </div>
+                      <div className="absolute bottom-1/4 left-1/4 -translate-x-1/2">
+                        <img 
+                          src="/lovable-uploads/6425c1aa-867d-4ea7-8d2c-ff556143906a.png" 
+                          alt="Zoom Logo" 
+                          className="w-20 h-20 object-contain"
+                        />
+                      </div>
+                      <div className="absolute bottom-1/4 right-1/4 translate-x-1/2">
+                        <img 
+                          src="/lovable-uploads/038df6d9-3eb8-402c-b234-605834103002.png" 
+                          alt="Cloud Logo" 
+                          className="w-20 h-20 object-contain"
+                        />
+                      </div>
                     </div>
                   )}
                   {index === 1 && (
