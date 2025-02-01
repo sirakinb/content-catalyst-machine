@@ -2,7 +2,7 @@ import { Check } from "lucide-react";
 
 const features = [
   {
-    name: "Content-Catalyst Trello Agent",
+    name: "Content Approval Hub",
     starter: true,
     momentum: true,
     enterprise: true,

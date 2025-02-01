@@ -9,7 +9,7 @@ const plans = [
     description: "Set Up Fee",
     tagline: "Craft professional posts directly from your call transcripts with ease",
     features: [
-      "Content-Catalyst Trello Agent",
+      "Content Approval Hub",
       "LinkedIn Post Creation", 
       "Customized Setup & Onboarding",
       "1-Hour Automation Strategy Session: Receive expert advice to optimize your content",
@@ -50,6 +50,16 @@ const plans = [
 ];
 
 export const PricingSection = () => {
+  const scrollToPackages = () => {
+    // Get the pricing section element
+    const pricingSection = document.getElementById('pricing');
+    if (pricingSection) {
+      const yOffset = -100; // Scroll up slightly from the packages
+      const y = pricingSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  };
+
   const scrollToBottom = () => {
     window.scrollTo({
       top: document.documentElement.scrollHeight,
@@ -145,7 +155,10 @@ export const PricingSection = () => {
         </div>
 
         <div className="mt-8 text-center text-gray-400">
-          Enjoy peace of mind with our 30-day money-back promise. <a href="#" className="text-white underline">Sign up for Content-Catalyst risk-free today!</a>
+          Enjoy peace of mind with our 30-day money-back promise. <a href="#" onClick={(e) => {
+            e.preventDefault();
+            scrollToPackages();
+          }} className="text-white underline">Sign up for Content-Catalyst risk-free today!</a>
         </div>
 
         <FeatureComparison />
