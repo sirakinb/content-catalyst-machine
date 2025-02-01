@@ -66,13 +66,13 @@ export const SolutionSection = () => {
                   {index === 1 && (
                     <div className="flex flex-col items-center gap-4">
                       <img 
-                        src="/lovable-uploads/ee3a8285-af62-4ef4-a59a-68f691e986d3.png" 
-                        alt="Trello" 
+                        src="/lovable-uploads/d085e4e7-7cd6-4bf9-8184-4f6f4c4cc2c7.png" 
+                        alt="Whale Logo" 
                         className="w-24 h-24 object-contain"
                       />
                       <img 
-                        src="/lovable-uploads/92ef4d17-b0fc-4a99-9b1c-7324dc3bd168.png" 
-                        alt="Slack" 
+                        src="/lovable-uploads/8d5cd76b-7895-47d1-a187-aff999bef8f9.png" 
+                        alt="Spiral Logo" 
                         className="w-24 h-24 object-contain"
                       />
                     </div>
