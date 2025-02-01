@@ -3,7 +3,7 @@ import { ArrowRight, FileText } from "lucide-react";
 const steps = [
   {
     title: "Capture your best insights",
-    description: "Content-Catalyst extracts your top ideas from conversations with prospects, clients, and meeting participants—no more struggling with blank pages. Let your words spark content creation instantly",
+    description: "Content-Catalyst extracts your top ideas from conversations with prospects, clients, and meeting participants—no more struggling with blank pages. Let your words spark content creation instantly.",
     imagePosition: "right"
   },
   {
@@ -13,7 +13,7 @@ const steps = [
   },
   {
     title: "Your Automated\nContent Machine",
-    description: "Content Catalyst delivers your polished posts to a personal content hub, where you can finalize edits before scheduling or automatically distributing. It's simple, efficient, and collaborative",
+    description: "Content Catalyst delivers your polished posts to a personal content hub, where you can finalize edits before scheduling or automatically distributing. It's simple, efficient, and collaborative.",
     imagePosition: "right"
   }
 ];
