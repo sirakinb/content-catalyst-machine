@@ -52,8 +52,8 @@ export const SolutionSection = () => {
                   {index === 0 && (
                     <div className="flex flex-col items-center gap-4">
                       <img 
-                        src="/lovable-uploads/12367c26-f261-4d7f-b70a-85196ad028b0.png" 
-                        alt="Fathom" 
+                        src="/lovable-uploads/12465eec-3052-49fb-8c53-64f5b34c8572.png" 
+                        alt="Cloud Logo" 
                         className="w-24 h-24 object-contain"
                       />
                       <img 
