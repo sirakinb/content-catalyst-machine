@@ -158,7 +158,7 @@ export const PricingSection = () => {
           Enjoy peace of mind with our 30-day money-back promise. <a href="#" onClick={(e) => {
             e.preventDefault();
             scrollToPackages();
-          }} className="text-white underline">Sign up for Content-Catalyst risk-free today!</a>
+          }} className="text-white underline">Sign up for Content Catalyst risk-free today!</a>
         </div>
 
         <FeatureComparison />

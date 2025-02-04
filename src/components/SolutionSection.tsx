@@ -3,12 +3,12 @@ import { ArrowRight, FileText } from "lucide-react";
 const steps = [
   {
     title: "Capture your best insights",
-    description: "Content-Catalyst extracts your top ideas from conversations with prospects, clients, and meeting participants—no more struggling with blank pages. Let your words spark content creation instantly.",
+    description: "Content Catalyst extracts your top ideas from conversations with prospects, clients, and meeting participants—no more struggling with blank pages. Let your words spark content creation instantly.",
     imagePosition: "right"
   },
   {
     title: "Turn conversations into postable content",
-    description: "Content-Catalyst identifies valuable ideas from your call transcripts and automatically translates them into quality, authentic content in your voice for review—within minutes.",
+    description: "Content Catalyst identifies valuable ideas from your call transcripts and automatically translates them into quality, authentic content in your voice for review—within minutes.",
     imagePosition: "left"
   },
   {

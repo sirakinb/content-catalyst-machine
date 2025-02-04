@@ -19,7 +19,7 @@ export const VisionarySection = () => {
             Amplify Your Impact.
           </h2>
           <p className="text-xl text-brand-purple mb-12">
-            With Content-Catalyst, you can:
+            With Content Catalyst, you can:
           </p>
         </div>
         
